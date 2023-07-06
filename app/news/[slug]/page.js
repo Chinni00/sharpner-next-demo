@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 export default function Page({ params }) {
@@ -12,5 +13,7 @@ export default function Page({ params }) {
   const person = details.find(person=>person.id==params.slug)
  console.log(person)
 
-  return <div>My News:{person.name} </div>
+  return <div>My News:{person.name}
+ 
+   </div>
 }
